@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sign In
+{% endblock %}
+
+{% block main %}
+    <div class="containerform">
+        <h1 class="name">Sign In</h1>
+        <form action="/signin" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text" required>
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password" required>
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="Password Again" type="password" required>
+            </div>
+            <button class="btn btn-warning" type="submit">Sign In</button>
+        </form>
+        <p id="form">if you have Account <a href="/login">Log In</a></p>
+    </div>
+{% endblock %}

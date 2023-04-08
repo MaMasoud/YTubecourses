@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Courses
+{% endblock %}
+
+{% block main %}
+<!-- <div class="row row-cols-1 row row-cols-3 g-4">
+    {% for course in courses %}
+        <div class="col">
+            <div class="card">
+                <img src="{{course['photo_link']}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{course["name"]}}</h5>
+
+                        <p class="card-text">{{course["discription"][0:60]}}</p>
+
+                </div>
+                <form action="/courses" method="post">
+                    <input type="hidden" name="enroll" value="{{course['course_id']}}">
+                    <button class="btn btn-warning" type="submit">Enroll</button>
+                </form>
+
+            </div>
+        </div>
+    {% endfor %}
+
+</div> -->
+<section class="courses mt-5">
+    <h2 class="text-center mb-4 featured">All Courses</h2>
+    <div class="row">
+        {% for course in courses %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{course['photo_link']}}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">{{course["name"]}}</h4>
+                        <p class="card-text">{{course["discription"][0:60]}}</p>
+                        <p class="card-text">{{course["time"]}} Hours</p>
+                        <form action="/courses" method="post">
+                            <input type="hidden" name="enroll" value="{{course['course_id']}}">
+                            <button class="btn btn-warning" type="submit">Enroll Now</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <a href="/addcourse" class="btn btn-warning btn-lg mt-3">Add New Course</a>
+</section>
+{% endblock %}

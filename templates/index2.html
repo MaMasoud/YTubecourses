@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Learn Tube
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <!-- Your content here -->
+</div>
+<section class="hero homepage">
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-4">Discover a new way to learn🎁</h1>
+        <p class="lead">Get access to All courses from your favorite YouTube channels, all in one place. Learn new skills, improve your knowledge, and be inspired by the content creators you love.</p>
+        <a href="/login" class="btn btn-warning btn-lg mt-3">Join now and get All course for free!</a>
+      </div>
+    </div>
+</section>
+<section class="courses mt-5">
+    <h2 class="text-center mb-4 featured">Featured Courses</h2>
+    <div class="row">
+
+      {% for i in range(3) %}
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="{{courses[i]['photo_link']}}" alt="">
+            <div class="card-body">
+              <h4 class="card-title">{{courses[i]['name']}}</h4>
+              <p class="card-text">{{courses[i]['discription']}}</p>
+              <a href="#" class="btn btn-warning stretched-link">View Course</a>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </section>
+  <section class="testimonials mt-5">
+    <h2 class="text-center mb-4 featured">What Our Students Say✨</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="width: 18rem; height:20rem">
+
+            <div class="card-body">
+              <p class="card-text">"I absolutely love this website! It's so easy to find the courses I'm interested in, and the quality of the content is top-notch. Highly recommend!"</p>
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Student</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mx-auto" style="width: 18rem; height:20rem">
+
+            <div class="card-body">
+              <p class="card-text">"This website has been a game-changer for me. I've been able to learn new skills that have helped me in my career, and it's all thanks to the amazing courses offered here."</p>
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">Student</p>
+              </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="card mx-auto" style="width: 18rem; height:20rem">
+
+              <div class="card-body">
+              <p class="card-text">"I've tried a lot of online learning platforms, but this one is by far the best. The courses are well-structured and engaging, and the instructors are experts in their fields."</p>
+              <h5 class="card-title">Bob Johnson</h5>
+              <p class="card-text">Student</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+              </a>
+
+</div>
+</section>
+{% endblock %}

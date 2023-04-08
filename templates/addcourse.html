@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Course
+{% endblock %}
+
+{% block main %}
+    <div class="container addcourse">
+        <h1 class="name featured">Add playlist youtube link</h1>
+        <form action="/addcourse" method="post">
+            <div class="input-group input-group-lg addCourseInput">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Link</span>
+                <input type="text" class="form-control" name="playlist" autofocus aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Playlist Link" required>
+            </div>
+            <button class="btn btn-warning" type="submit">Add Course</button>
+        </form>
+    </div>
+{% endblock %}

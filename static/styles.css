@@ -1,0 +1,126 @@
+/* Size for brand */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    /* background-color:#0274D1; */
+    background-color:#001742;
+    padding:0px;
+}
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+ .title{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.containerform {
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name{
+    margin: 20px;
+}
+
+p{
+    margin-top: 20px;
+}
+.btn-warning{
+    font-weight: 500;
+}
+.card{
+    height:400px;
+}
+ .addcourse{
+    width: 700px;
+}
+.addCourseInput {
+    margin:10px;
+    margin-bottom: 30px;
+}
+.homepage{
+    color:#fff;
+}
+.homepage h1{
+    font-weight: 500;
+}
+.featured{
+    color:#fff;
+}
+/* .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  } */
+
+  footer {
+    background-color: #000e26;
+    color: #fff;
+    padding: 50px 0;
+  }
+
+  footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer ul li {
+    margin-bottom: 10px;
+  }
+
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  footer ul li a:hover {
+    text-decoration: underline;
+  }

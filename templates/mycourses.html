@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Courses
+{% endblock %}
+
+{% block main %}
+<div class="row row-cols-1 row row-cols-3 g-4">
+    {% for course in courses %}
+        <div class="col">
+            <div class="card">
+                <img src="{{course['photo_link']}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{course["name"]}}</h5>
+
+                    <p class="card-text">{{course["discription"][0:60]}}</p>
+
+                    <a class="btn btn-warning" href="/course/{{course['course_id']}}">Open Course</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+
