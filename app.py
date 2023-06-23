@@ -106,15 +106,15 @@ def signin():
         # Ensure password was submitted
         elif not password:
             flash("Enter Password !!!!")
-            return render_template("signin.html")
+            return render_template("signup.html")
 
         elif not confirmation:
             flash("Enter Password Again !!!!")
-            return render_template("signin.html")
+            return render_template("signup.html")
 
         elif password != confirmation:
             flash("Password Not Match !!!!")
-            return render_template("signin.html")
+            return render_template("signup.html")
 
         # hash password
         hash = generate_password_hash(password)
@@ -132,7 +132,7 @@ def signin():
 
 
     else:
-        return render_template("signin.html")
+        return render_template("signup.html")
 
 
 @app.route("/logout")
