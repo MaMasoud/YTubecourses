@@ -85,7 +85,7 @@ def login():
         return render_template("login.html")
 
 
-@app.route("/signin", methods=["GET", "POST"])
+@app.route("/signup", methods=["GET", "POST"])
 def signin():
     """Log user in"""
 
@@ -101,7 +101,7 @@ def signin():
 
         if not username:
             flash("Enter Username !!!!")
-            return render_template("signin.html")
+            return render_template("signup.html")
 
         # Ensure password was submitted
         elif not password:
